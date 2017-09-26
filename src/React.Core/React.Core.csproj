@@ -26,9 +26,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="JavaScriptEngineSwitcher.ChakraCore" Version="2.4.8" />
+    <PackageReference Include="JavaScriptEngineSwitcher.ChakraCore" Version="2.4.10" />
     <PackageReference Include="JavaScriptEngineSwitcher.ChakraCore.Native.win-x64" Version="2.4.6" />
-    <PackageReference Include="JavaScriptEngineSwitcher.Core" Version="2.4.9" />
+    <PackageReference Include="JavaScriptEngineSwitcher.Core" Version="2.4.10" />
     <PackageReference Include="JavaScriptEngineSwitcher.Msie" Version="2.4.9" />
     <PackageReference Include="JSPool" Version="3.0.1" />
     <PackageReference Include="Microsoft.NET.Sdk" Version="1.0.0-alpha-20161104-2" />
@@ -48,6 +48,12 @@
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.6' ">
     <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="1.1.1" />
     <PackageReference Include="VroomJs" Version="1.2.3" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.6'">
+    <PackageReference Include="Microsoft.ChakraCore">
+      <Version>1.7.2</Version>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

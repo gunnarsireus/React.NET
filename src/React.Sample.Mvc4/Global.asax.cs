@@ -1,4 +1,4 @@
-﻿/*
+/*
  *  Copyright (c) 2014-Present, Facebook, Inc.
  *  All rights reserved.
  *
@@ -9,7 +9,10 @@
 
 using System.Web.Mvc;
 using System.Web.Optimization;
+using System.Web.Optimization.React;
 using System.Web.Routing;
+using JavaScriptEngineSwitcher.Core;
+
 
 namespace React.Sample.Mvc4
 {
@@ -23,6 +26,7 @@ namespace React.Sample.Mvc4
 			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
+			//JsEngineSwitcherConfig.Configure(JsEngineSwitcher.Instance);
 		}
 	}
 }

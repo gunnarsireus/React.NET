@@ -13,7 +13,9 @@ namespace React.Sample.Mvc4
 			// your components as well as all of their dependencies.
 			// See http://reactjs.net/ for more information. Example:
 			ReactSiteConfiguration.Configuration
-				.AddScript("~/Content/Sample.jsx");
+				.AddScript("~/Content/Sample.jsx")
+				.AddScript("~/Content/HelloWorld.jsx");
+				//.AddScript("~/Content/HelloWorldES6.jsx");
 
 			// If you use an external build too (for example, Babel, Webpack,
 			// Browserify or Gulp), you can improve performance by disabling 
